@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "lite-server && tsc index.ts",
+    "compile": "tsc-watch"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,10 @@
   },
   "homepage": "https://github.com/codesandbox-app/static-template#readme",
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "typescript": "5.3.3",
+    "lite-server": "2.6.1",
+    "tsc-watch": "6.0.4"
   },
   "dependencies": {}
 }
